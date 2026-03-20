@@ -4,6 +4,8 @@
 Blocks prompt injections, detects intent drift, enforces sequential execution.  
 Every step chain-logged with tamper-evident hashes.
 
+> ⚠️ Discovered: OpenClaw's `after_tool_call` hook does not pass tool result content to plugins by default — making security scanning impossible without this fix. Airlock patches this gap.
+
 ---
 
 ## Install
@@ -105,9 +107,6 @@ Real prompt injection blocked in OpenClaw:
 ```AIRLOCK INJECTION BLOCK: read score=0.90 — Matched: instruction_override```
 ```
 
-Und lad den Screenshot den du vorhin gemacht hast als `screenshot.png` hoch.
-
-Das macht aus "cool Projekt" → "bewiesenes Security Tool".
 
 
 MIT License — Airlock Security
