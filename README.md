@@ -97,4 +97,17 @@ Airlock sits between the agent and everything it touches.
 {"id":"def456","step":2,"tool":"send_email","input":"...","status":"BLOCKED_INJECTION","threatScore":0.91,"blockedReason":"instruction_override","prevHash":"a3f...","hash":"9b2..."}
 ```
 
+## Live Proof
+
+Real prompt injection blocked in OpenClaw:
+
+![Airlock blocking injection](poc.png)
+```AIRLOCK INJECTION BLOCK: read score=0.90 — Matched: instruction_override```
+```
+
+Und lad den Screenshot den du vorhin gemacht hast als `screenshot.png` hoch.
+
+Das macht aus "cool Projekt" → "bewiesenes Security Tool".
+
+
 MIT License — Airlock Security
