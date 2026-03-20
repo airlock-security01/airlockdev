@@ -1,0 +1,16 @@
+{
+  "name": "@airlock/openclaw-plugin",
+  "version": "0.1.0",
+  "description": "Airlock — Agent Security Layer for OpenClaw.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "openclaw": {
+    "extensions": ["src/index.ts"],
+    "plugin": {
+      "id": "airlock",
+      "name": "Airlock Security Layer",
+      "description": "Blocks prompt injections, intent drift, and parallel execution attacks."
+    }
+  }
+}
